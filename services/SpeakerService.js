@@ -40,7 +40,6 @@ class SpeakerService {
     // create an array that contains all artwork
     const artwork = data.reduce((acc, elm) => {
       if (elm.artwork) {
-        // eslint-disable-next-line no-param-reassign
         acc = [...acc, ...elm.artwork];
       }
       return acc;
