@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, './views'))
 
 app.use(express.static(path.join(__dirname, './static')))
 
-app.use('/', routes)
+app.use('/', routes())
 
 app.listen(port, () => {
   console.log(`express server listening on port ${port}`)
